@@ -15,3 +15,6 @@
 
 - [x] Présentation Bibiographie
 - [ ] Formation Git et Python
+
+### Infos pratiques
+Vous trouverez le dataset dans le main : "breastw.mat"
