@@ -17,4 +17,6 @@
 - [ ] Formation Git et Python
 
 ### Infos pratiques
-Vous trouverez le dataset dans le main : "breastw.mat"
+Vous trouverez le dataset dans le dissier 'dataset et test'.
+Le dataset est le fichier "breastw.mat"
+Le notebook DataSetManip est un premier test d'ouverture du set avec des explications, je vous invite à regarder ça.
