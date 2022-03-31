@@ -6,7 +6,7 @@ import scipy.io as sp
 from mpl_toolkits.mplot3d import Axes3D
 
 #Loading Dataset
-dataSet = sp.loadmat('breastw.mat')
+dataSet = sp.loadmat("Test_Jules\\breastw.mat")
 #Splitting dataset
 Xtraining = dataSet['X'] #in this first run we use the whole dataset
 X = Xtraining
@@ -26,8 +26,8 @@ centersreduced2D = reduce2D.fit_transform(centers)
 #Applying model to dataSet
 kmeansEstimate = model.predict(X)
 #Switching cluster labels to match with dataset labels
-kmeansEstimate *= -1
-kmeansEstimate +=1
+#kmeansEstimate *= -1
+#kmeansEstimate +=1
 
 #Separating malignant and benign cells in 2 different arrays
 Xbenign2D =  Xreduced2D[np.where(y==0)[0]]
@@ -62,3 +62,4 @@ ax3.scatter(centersreduced2D[:,0],  centersreduced2D[:,1],  c='black', label = '
 fig.legend()
 ax4.axis('off')
 fig.tight_layout()
+plt.show()
